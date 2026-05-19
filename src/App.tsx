@@ -8,6 +8,7 @@ import { CityScene } from './components/CityScene';
 import { BuildingPanel } from './components/BuildingPanel';
 import { DebtDashboard } from './components/Dashboard';
 import { MonacoView } from './components/MonacoView';
+import { AboutPage } from './components/AboutPage';
 import { AlertCircle } from 'lucide-react';
 import { Button } from './components/ui/Button';
 
@@ -45,6 +46,9 @@ export const App: React.FC = () => {
         )}
         {activeTab === 'refactor' && (
           <div style={{flex:1,overflowY:'auto'}}><MonacoView /></div>
+        )}
+        {activeTab === 'about' && (
+          <div style={{flex:1,overflowY:'auto'}}><AboutPage /></div>
         )}
       </main>
     </div>
