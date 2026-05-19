@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { startAnalysis, getAnalysisProgress, getAnalysisResults, getRefactorPlan } from '../api/mockApi';
+import { startAnalysis, getAnalysisProgress, getAnalysisResults, getRefactorPlan, API_BASE_URL } from '../api/mockApi';
 import { useStore } from '../store/useStore';
 import { useEffect, useRef } from 'react';
 
@@ -46,7 +46,7 @@ export const useStatusPolling = () => {
 
       const poll = async () => {
         try {
-          const response = await fetch(`http://localhost:3001/api/jobs/${jobId}`);
+          const response = await fetch(`${API_BASE_URL}/api/jobs/${jobId}`);
           if (!response.ok) return;
           const data = await response.json();
 
