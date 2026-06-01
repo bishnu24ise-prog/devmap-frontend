@@ -3,7 +3,7 @@
 **Next-Gen Technical Debt Visualizer**  
 *Visualize complex software codebases as interactive, navigable 3D cities.*
 
-![DebtMap Preview](https://via.placeholder.com/1200x600/0f172a/22d3ee?text=DebtMap+-+3D+Codebase+Visualization)
+🚀 **[Live Demo](https://devmap-frontend.vercel.app)**
 
 DebtMap transforms any GitHub repository or local `.zip` file into a dynamic 3D metropolis. By mapping abstract code architecture into physical building dimensions, we make technical debt, module coupling, and code complexity instantly understandable for developers of all levels.
 
