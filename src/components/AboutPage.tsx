@@ -371,10 +371,10 @@ export const AboutPage: React.FC = () => {
         <div style={styles.heroSection}>
           <div style={styles.heroGrid} />
           <div style={{ position: 'relative', zIndex: 1 }}>
-            <span style={styles.heroBadge}>Platform Architect</span>
-            <h1 style={styles.heroTitle}>Built by Bishnu Kumar Sardar</h1>
+            <span style={styles.heroBadge}>Team DebtMap</span>
+            <h1 style={styles.heroTitle}>Built by Bishnu & Ansika</h1>
             <p style={styles.heroSubtitle}>
-              Full Stack Developer and Architect -- Cambridge Institute of Technology, KR Puram, Bangalore
+              Engineering & Design Visionaries -- Cambridge Institute of Technology, KR Puram, Bangalore
             </p>
           </div>
         </div>
@@ -383,7 +383,7 @@ export const AboutPage: React.FC = () => {
         <div style={styles.narrativeSection}>
           <span style={styles.narrativeLabel}>Narrative Statement</span>
           <p style={styles.narrativeQuote}>
-            "I independently architected and built DebtMap from the ground up -- a full-stack technical debt visualizer that transforms any codebase into a navigable 3D city. Every building is a file. Height = complexity. Width = coupling. Texture decay = no test coverage. Click any building and Claude AI gives you an instant refactor plan."
+            "We independently architected and built DebtMap from the ground up -- a full-stack technical debt visualizer that transforms any codebase into a navigable 3D city. Every building is a file. Height = complexity. Width = coupling. Texture decay = no test coverage. Click any building and Claude AI gives you an instant refactor plan."
           </p>
         </div>
 
@@ -492,7 +492,7 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
 
-        {/* SECTION 6 - FOUNDER CARD */}
+        {/* SECTION 6 - TEAM CARDS */}
         <div style={styles.founderSection}>
           <div style={styles.founderTopLine} />
           <div style={styles.founderContent}>
@@ -535,6 +535,51 @@ export const AboutPage: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div style={styles.founderSection}>
+          <div style={styles.founderTopLine} />
+          <div style={styles.founderContent}>
+            <div style={styles.founderProfile}>
+              <div style={{ ...styles.founderAvatar, background: 'linear-gradient(135deg, #f472b6, #c084fc, #818cf8)' }}>AS</div>
+              <div>
+                <h3 style={styles.founderName}>Ansika Singh</h3>
+                <p style={styles.founderRole}>UI/UX Design & Frontend Developer</p>
+                <p style={styles.founderCollege}>Cambridge Institute of Technology, KR Puram, Bangalore</p>
+              </div>
+            </div>
+            <div style={styles.telemetryTable}>
+              <div style={styles.telemetryHeader}>
+                <span>Telemetry Variable</span>
+                <span>System Diagnostic Value</span>
+              </div>
+              <div style={styles.telemetryRow}>
+                <span style={styles.telemetryLabel}>Name</span>
+                <span style={styles.telemetryValue}>Ansika Singh</span>
+              </div>
+              <div style={styles.telemetryRow}>
+                <span style={styles.telemetryLabel}>College</span>
+                <span style={styles.telemetryValue}>Cambridge Institute of Technology, KR Puram, Bangalore</span>
+              </div>
+              <div style={styles.telemetryRow}>
+                <span style={styles.telemetryLabel}>Role</span>
+                <span style={styles.telemetryValueCyan}>UI/UX Design & Frontend Developer</span>
+              </div>
+              <div style={styles.telemetryRow}>
+                <span style={styles.telemetryLabel}>Design Stack</span>
+                <span style={styles.telemetryValue}>Figma, Adobe XD, Framer Motion, Tailwind CSS</span>
+              </div>
+              <div style={styles.telemetryRow}>
+                <span style={styles.telemetryLabel}>Frontend Stack</span>
+                <span style={styles.telemetryValue}>React, Next.js, TypeScript, Three.js Aesthetics</span>
+              </div>
+              <div style={styles.telemetryRow}>
+                <span style={styles.telemetryLabel}>Superpower</span>
+                <span style={styles.telemetryValueGreen}>Turning complex code graphs into beautiful user experiences</span>
+              </div>
+            </div>
+          </div>
+          
           <div style={styles.footerTag}>
             <span style={styles.footerBadge}>Built with love for DebtMap Hackathon 2026</span>
           </div>
