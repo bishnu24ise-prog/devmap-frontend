@@ -227,14 +227,14 @@ export const LandingPage: React.FC = () => {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyan-500/8 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-purple-500/8 rounded-full blur-[120px]" />
         <Reveal className="reveal relative z-10 max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-5 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-widest mb-8 shimmer-line">🎯 Platform Architect</div>
+          <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-5 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-widest mb-8 shimmer-line">🎯 Team DebtMap</div>
           <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight font-outfit leading-none mb-8 cursor-default">
             Built by <br className="md:hidden" />
             <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent glow-text-cyan">
-              <ScrambleText text="Bishnu Kumar Sardar" />
+              <ScrambleText text="Bishnu & Ansika" />
             </span>
           </h2>
-          <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-xl mx-auto mb-10">Full Stack Developer & Architect — Cambridge Institute of Technology, KR Puram, Bangalore</p>
+          <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-xl mx-auto mb-10">Engineering & Design Visionaries — Cambridge Institute of Technology, KR Puram, Bangalore</p>
           <div className="flex gap-4 justify-center">
             <button onClick={() => scrollTo('narrative')} className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 text-white font-bold text-sm hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] transition-all hover-lift">Read My Story</button>
             <button onClick={() => scrollTo('founder')} className="px-6 py-3 rounded-xl border border-white/10 text-slate-300 font-bold text-sm hover:border-cyan-500/30 transition-all hover-lift">View Profile</button>
@@ -250,7 +250,7 @@ export const LandingPage: React.FC = () => {
           <div className="relative z-10">
             <div className="flex items-center gap-2 mb-8"><span className="text-xl">📖</span><span className="text-[10px] font-mono uppercase tracking-[4px] text-cyan-400 font-bold">Narrative Statement</span></div>
             <blockquote className="text-xl md:text-2xl font-light italic text-slate-200 leading-relaxed border-l-4 border-cyan-400 pl-8">
-              "I independently architected and built DebtMap from the ground up — a full-stack technical debt visualizer that transforms any codebase into a navigable 3D city. Every building is a file. Height = complexity. Width = coupling. Texture decay = no test coverage. Click any building and Claude AI gives you an instant refactor plan."
+              "We independently architected and built DebtMap from the ground up — a full-stack technical debt visualizer that transforms any codebase into a navigable 3D city. Every building is a file. Height = complexity. Width = coupling. Texture decay = no test coverage. Click any building and Claude AI gives you an instant refactor plan."
             </blockquote>
           </div>
         </Reveal>
@@ -411,27 +411,53 @@ export const LandingPage: React.FC = () => {
       <section id="founder" className="min-h-[80vh] flex items-center justify-center p-8 md:p-16">
         <Reveal className="reveal-scale max-w-5xl w-full p-10 md:p-14 rounded-3xl border border-cyan-500/20 bg-slate-950/70 backdrop-blur-xl shadow-[0_0_60px_rgba(6,182,212,0.06)] relative overflow-hidden gradient-border">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(168,85,247,0.04),transparent_60%)]" />
-          <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start gap-10">
-            <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-cyan-400 via-sky-400 to-purple-500 flex items-center justify-center font-black font-outfit text-3xl text-slate-950 shadow-[0_0_40px_rgba(6,182,212,0.4)] shrink-0 border-2 border-cyan-300/30 relative">
-                BKS
-                <div className="absolute inset-[-8px] rounded-full border border-cyan-400/20 animate-ping opacity-30" />
+          <div className="relative z-10 flex flex-col gap-12">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
+              <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-cyan-400 via-sky-400 to-purple-500 flex items-center justify-center font-black font-outfit text-3xl text-slate-950 shadow-[0_0_40px_rgba(6,182,212,0.4)] shrink-0 border-2 border-cyan-300/30 relative">
+                  BKS
+                  <div className="absolute inset-[-8px] rounded-full border border-cyan-400/20 animate-ping opacity-30" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-extrabold font-outfit leading-none mb-1 cursor-default"><ScrambleText text="Bishnu Kumar Sardar" /></h3>
+                  <p className="text-sm text-cyan-400 font-semibold font-mono uppercase tracking-wider mb-1">Full Stack Developer & Architect</p>
+                  <p className="text-xs text-slate-400">Cambridge Institute of Technology, KR Puram, Bangalore</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-extrabold font-outfit leading-none mb-1 cursor-default"><ScrambleText text="Bishnu Kumar Sardar" /></h3>
-                <p className="text-sm text-cyan-400 font-semibold font-mono uppercase tracking-wider mb-1">Full Stack Developer & Architect</p>
-                <p className="text-xs text-slate-400">Cambridge Institute of Technology, KR Puram, Bangalore</p>
+              <div className="flex-1 w-full lg:max-w-md rounded-2xl border border-white/5 overflow-hidden font-mono text-[11px] bg-slate-950/70 shadow-2xl">
+                <div className="grid grid-cols-3 p-3 bg-slate-900/40 border-b border-white/5 text-slate-500 font-bold uppercase tracking-widest text-[8px]">
+                  <div>Variable</div><div className="col-span-2">Diagnostic Value</div>
+                </div>
+                {[['Name','Bishnu Kumar Sardar','text-slate-100 font-bold'],['College','Cambridge Institute of Technology, KR Puram','text-slate-300'],['Role','Full Stack Developer & Architect','text-cyan-400 font-bold'],['Frontend','React 18, TS, Three.js, R3F, Zustand, Monaco, Recharts','text-slate-300'],['Backend','FastAPI, tree-sitter, radon, NetworkX, Claude AI, Supabase','text-slate-300'],['Deployed','Vercel + Railway + Cloudflare CDN','text-emerald-400 font-semibold']].map(([k,v,cls]) => (
+                  <div key={k} className="grid grid-cols-3 p-3 border-b border-white/[0.02] hover:bg-white/[0.02] transition-colors">
+                    <div className="text-slate-500">{k}</div><div className={`col-span-2 ${cls}`}>{v}</div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="flex-1 w-full lg:max-w-md rounded-2xl border border-white/5 overflow-hidden font-mono text-[11px] bg-slate-950/70 shadow-2xl">
-              <div className="grid grid-cols-3 p-3 bg-slate-900/40 border-b border-white/5 text-slate-500 font-bold uppercase tracking-widest text-[8px]">
-                <div>Variable</div><div className="col-span-2">Diagnostic Value</div>
-              </div>
-              {[['Name','Bishnu Kumar Sardar','text-slate-100 font-bold'],['College','Cambridge Institute of Technology, KR Puram','text-slate-300'],['Role','Full Stack Developer & Architect','text-cyan-400 font-bold'],['Frontend','React 18, TS, Three.js, R3F, Zustand, Monaco, Recharts','text-slate-300'],['Backend','FastAPI, tree-sitter, radon, NetworkX, Claude AI, Supabase','text-slate-300'],['Deployed','Vercel + Railway + Cloudflare CDN','text-emerald-400 font-semibold']].map(([k,v,cls]) => (
-                <div key={k} className="grid grid-cols-3 p-3 border-b border-white/[0.02] hover:bg-white/[0.02] transition-colors">
-                  <div className="text-slate-500">{k}</div><div className={`col-span-2 ${cls}`}>{v}</div>
+
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
+              <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-pink-400 via-fuchsia-400 to-indigo-500 flex items-center justify-center font-black font-outfit text-3xl text-slate-950 shadow-[0_0_40px_rgba(236,72,153,0.4)] shrink-0 border-2 border-pink-300/30 relative">
+                  AS
+                  <div className="absolute inset-[-8px] rounded-full border border-pink-400/20 animate-ping opacity-30" />
                 </div>
-              ))}
+                <div>
+                  <h3 className="text-2xl font-extrabold font-outfit leading-none mb-1 cursor-default"><ScrambleText text="Ansika Singh" /></h3>
+                  <p className="text-sm text-pink-400 font-semibold font-mono uppercase tracking-wider mb-1">UI/UX Design & Frontend Developer</p>
+                  <p className="text-xs text-slate-400">Cambridge Institute of Technology, KR Puram, Bangalore</p>
+                </div>
+              </div>
+              <div className="flex-1 w-full lg:max-w-md rounded-2xl border border-white/5 overflow-hidden font-mono text-[11px] bg-slate-950/70 shadow-2xl">
+                <div className="grid grid-cols-3 p-3 bg-slate-900/40 border-b border-white/5 text-slate-500 font-bold uppercase tracking-widest text-[8px]">
+                  <div>Variable</div><div className="col-span-2">Diagnostic Value</div>
+                </div>
+                {[['Name','Ansika Singh','text-slate-100 font-bold'],['College','Cambridge Institute of Technology, KR Puram','text-slate-300'],['Role','UI/UX Design & Frontend Developer','text-pink-400 font-bold'],['Design Stack','Figma, Adobe XD, Framer Motion, Tailwind','text-slate-300'],['Frontend Stack','React, Next.js, TypeScript, Three.js Aesthetics','text-slate-300'],['Superpower','Turning code graphs into beautiful experiences','text-emerald-400 font-semibold']].map(([k,v,cls]) => (
+                  <div key={k} className="grid grid-cols-3 p-3 border-b border-white/[0.02] hover:bg-white/[0.02] transition-colors">
+                    <div className="text-slate-500">{k}</div><div className={`col-span-2 ${cls}`}>{v}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="text-center mt-12 pt-6 border-t border-white/5">
@@ -513,7 +539,7 @@ export const LandingPage: React.FC = () => {
             </div>
           </div>
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-[11px] text-slate-600 font-mono">2026 DebtMap. Built by Bishnu Kumar Sardar. All rights reserved.</p>
+            <p className="text-[11px] text-slate-600 font-mono">2026 DebtMap. Built by Bishnu & Ansika. All rights reserved.</p>
             <div className="flex gap-4 text-[11px] text-slate-600 font-mono">
               <span className="hover:text-slate-400 cursor-pointer transition-colors">Privacy Policy</span>
               <span className="hover:text-slate-400 cursor-pointer transition-colors">Terms of Service</span>
